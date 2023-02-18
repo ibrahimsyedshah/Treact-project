@@ -150,7 +150,7 @@ button:hover {
   justify-content: center;
   visibility: hidden;
   opacity: 0;
-
+  z-index: 1;
 }
 
 .menu--open .menu__backdrop{
@@ -962,6 +962,7 @@ footer {
 
 .link__heading {
   padding: 0 6px;
+  margin-bottom: 12px;
 }
 
 .link__list--item-wrapper {
@@ -1024,6 +1025,7 @@ footer {
   color: #cbd5e0;
   font-size: 16px;
   font-weight: 500;
+  text-align: center;
 }
 
 .socials {
@@ -1049,7 +1051,7 @@ footer {
 
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
-@media (max-width: 802px) {
+@media (max-width: 830px) {
   .nav__links {
     display: none;
   }
@@ -1146,12 +1148,30 @@ footer {
   .faq__text {
     font-size: 16px;
   }
+
+  .link__heading {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 750px) {
   h2 {
     font-size: 34px;
   } 
+
+  .header__container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .header__img--wrapper {
+    margin-top: 24px;
+  }
+
+  .header__desc {
+    width: 100%;
+    max-width: none;
+  }
 
   .email-form__submission {
     padding: 20px 28px;
@@ -1166,5 +1186,188 @@ footer {
   .header__desc--para {
     font-size: 14px;
   }
+
+  .quality-work__container {
+    flex-direction: column;
+  }
+
+  .quality-work__desc {
+    width: 100%;
+    max-width: none;
+  }
+
+  .quality-work__img--wrapper {
+    margin-top: 24px;
+  }
+
+   .steps__container {
+    flex-direction: column;
+  }
+
+  .steps__desc {
+    padding: 0 24px;
+  }
+
+  .steps__img--wrapper {
+    margin-bottom: 24px;
+    justify-content: center;
+  }
+
+  .values__container {
+    flex-direction: column;
+  }
+
+  .values__desc {
+    width: 100%;
+    max-width: none;
+    padding: 0 12px;
+  }
+
+  .values__img--wrapper {
+    margin-top: 24px;
+  }
+
+  .testimonials__container {
+    flex-direction: column;
+  }
+
+  .testimonials__img--wrapper {
+    margin-bottom: 24px;
+  }
+
+  .testimonials__text {
+    padding: 0 32px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+
+  .footer__logo--img-wrapper {
+    width: 28px;
+    height: 28px;
+  }
+
+  .footer__logo--name {
+    font-size: 16px;
+  }
 }
 
+@media (max-width: 650px) {
+  .feature {
+    width: calc(100%/2);
+  }
+
+  .price {
+    font-size: 40px;
+  }
+
+  .link {
+    width: calc(100%/3);
+    margin-bottom: 48px;
+  }
+
+  .footer__info {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer__logo {
+    margin-bottom: 24px;
+  }
+
+  .copyright {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 550px) {
+  .feature {
+    width: 100%;
+    padding: 32px 0;
+  }
+
+  .feature__desc--para {
+    text-align: center;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .duration {
+    font-size: 14px;
+  }
+
+  .main-feature {
+    font-size: 18px;
+  }
+
+  .sub-feature {
+    font-size: 14px;
+  }
+
+  .contact__title {
+    font-size: 24px;
+  }
+
+  .contact__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact__button1 {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .link {
+    width: calc(100%/2);
+  }  
+}
+
+@media (max-width: 450px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+
+  .features__heading--para {
+    font-size: 14px;
+  }
+
+  .quality-work__desc--para {
+    font-size: 14px;
+  }  
+
+  .value__para {
+    font-size: 12px;
+  }
+
+  .plan {
+    width: 55vw;
+  }
+
+  .price {
+    font-size: 36px;
+  }
+
+  .testimonials__header {
+    font-size: 14px;
+  }
+
+  blockquote {
+    font-size: 12px;
+  }
+
+  .faqs__header--text {
+    font-size: 14px;
+  }
+
+  .faq__text {
+    font-size: 14px;
+  }
+}
