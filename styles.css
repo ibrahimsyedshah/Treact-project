@@ -530,6 +530,10 @@ VALUES
   display: flex;
 }
 
+.fa-dollar-sign {
+  width: 16px;
+}
+
 .value__icon {
   border-radius: 9999px;
   padding: 12px;
