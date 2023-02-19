@@ -1282,6 +1282,10 @@ footer {
 }
 
 @media (max-width: 550px) {
+  .menu__backdrop {
+    bottom: 48px;
+  }
+
   .feature {
     width: 100%;
     padding: 32px 0;
