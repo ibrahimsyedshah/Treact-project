@@ -1295,6 +1295,18 @@ footer {
     text-align: center;
   }
 
+  .values {
+    flex-direction: column;
+  }
+
+  .value {
+    width: 75%;
+  }
+
+  .value:not(:last-child){
+    margin-bottom: 28px;
+  }
+
   .name {
     font-size: 18px;
   }
