@@ -266,7 +266,7 @@ HEADER
 .header__container {
   display: flex;
   padding: 96px 32px;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   margin: 0 auto;
   animation: slideLeft 900ms ease;
 }
